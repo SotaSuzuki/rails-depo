@@ -37,7 +37,7 @@ class ProductTest < ActiveSupport::TestCase
       title: "My Book Title",
       description: "yyy",
       price: 1,
-      image_url: "zzz.jpg")
+      image_url: image_url)
   end
 
   test "image url" do
@@ -70,6 +70,6 @@ class ProductTest < ActiveSupport::TestCase
       price: 1,
       image_url: "fred.gif")
     assert product.invalid?
-    assert_equal [i18n.translate('errors.messages.taken')], product.errors[:title]
+    assert_equal [I18n.translate('errors.messages.taken')], product.errors[:title]
   end
 end
