@@ -20,6 +20,7 @@
           <li><a href="#">News</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+        <p class="clock"><%= Time.now.strftime "%I:%M%p" %></p>
       </div>
       <div id="main">
         <%= yield %>
