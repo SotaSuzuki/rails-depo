@@ -36,6 +36,10 @@
       margin-left: 100px;
       margin-top: .5em;
       margin-bottom: .8em;
+
+      form, div {
+        display: inline;
+      }
     }
 
     .price {
