@@ -7,6 +7,10 @@ module CurrentCart
       session[:cart_id] = @cart.id
     end
 
+    def current_cart_is_empty
+      Cart
+    end
+
   protected
     def increment_counter
       session[:counter] = 0 if session[:counter].nil?
